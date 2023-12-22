@@ -1,0 +1,5 @@
+package com.test.mybatis2.controller;
+
+public class TestController {
+
+}

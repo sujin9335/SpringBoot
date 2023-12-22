@@ -1,0 +1,5 @@
+package com.test.mybatis2.persist;
+
+public class TestDAO {
+
+}

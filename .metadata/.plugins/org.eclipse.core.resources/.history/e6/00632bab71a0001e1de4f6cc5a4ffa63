@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://me2.do/5BvBFj57">
+</head>
+<body>
+	<h1>M1</h1>
+	<!--
+	
+		Thyemleaf Expression
+		- EL/JSTL 유사
+		
+		1. Variable Expressions, 변수 표현식
+		- ${}
+		
+		2. Selection Variable Expression, 선택 변수 표현식
+		- *{}
+		
+		3. Message Expressions, 메시지 표현식
+		- #{}
+		
+		4. Link URL Expressions, 링크 주소 표현식
+		- @{}
+		
+		5. Fragment Expressions, 조각 페이지 표현식
+		- ~{}
+	
+	
+	-->
+	
+	<h2>변수 표현식</h2>
+	
+	<div>${num}</div>
+	<div th:text="${num}"></div>
+	<!-- 기존데이터는 덮어쓰기됨 -->
+	<div th:text="${num}">기존데이터</div>
+	
+	<div>제가 가지고 있는 숫자는 100 입니다</div>
+	
+	<!-- 문자열은 홑따옴표로 표현 -->
+	<div th:text="'제가 가지고 있는 숫자는 100 입니다'"></div>
+	
+	<div th:text="'제가 가지고 있는 숫자는' + ${num} + '입니다'"></div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+

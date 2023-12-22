@@ -1,0 +1,17 @@
+package com.test.mybatis2.persist;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.test.mybatis2.domain.TestDTO;
+
+@Repository
+public class TestDAO {
+
+	public List<TestDTO> list() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

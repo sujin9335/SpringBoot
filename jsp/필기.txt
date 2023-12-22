@@ -1,0 +1,36 @@
+
+Spring Boot + JSP
+- 스프링 부트는 기본적으로 JSP를 지원하지 않는다
+
+Spring Boot + 템플릿 엔진
+- Thymeleaf > 기본
+- Mustache
+- Freemarker
+- Velocity
+- 등..(JSP)
+
+
+ : 수업은 Thymeleaf쓸껀데 먼저 JSP 방법 알아보기
+ 
+ 
+JSP 관련 의존성 추가
+
+application.properties
+
+
+파일추가
+- com.test.controller > TestController.java
+- src > main > webapp > WEB-INF > views
+
+
+
+
+
+
+
+
+
+
+
+
+

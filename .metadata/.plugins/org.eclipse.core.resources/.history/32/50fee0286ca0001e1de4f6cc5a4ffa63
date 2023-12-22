@@ -1,0 +1,15 @@
+
+Spring Boot + Thymeleaf
+
+JSP(X) > Thymeleaf(O)
+
+Thymeleaf(JSP + EL + JSTL)
+- 템플릿 엔진
+- 화면을 출력하는 담당(뷰 제작)
+- Thymeleaf, Freemaker, Mustache, Groovy 등 ..
+
+
+
+설정(application.properties)
+- 기존 설정 재사용
+- 타임리프 설정 추가

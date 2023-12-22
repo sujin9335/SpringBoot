@@ -1,0 +1,5 @@
+package com.test.mybatis2.mapper;
+
+public interface TestMapper {
+
+}
