@@ -18,3 +18,18 @@ Thymeleaf(JSP + EL + JSTL)
 파일추가
 - com.test.thymeleaf.controller > TestController.java
 - src/main/resouces > temlates(jsp에서 =views 랑 같음) > "m1.html"
+
+
+- com.test.thymeleaf.mapper > TestMapper.java(I)
+- com.test.thymeleaf.repository > TestDAO.java(C)
+- com.test.thymeleaf.domain > TestDTO.java
+
+- src/main/resources > com > test > thymeleaf > mapper > TestMapper
+
+
+
+
+
+
+
+

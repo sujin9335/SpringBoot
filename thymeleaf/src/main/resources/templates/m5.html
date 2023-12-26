@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+	.one { color:blue; }
+	.two { background: yellow; }
+	.three { text-decoration: underline; }
+
+</style>
+
+</head>
+<body>
+
+	<h1>HTML Attributes</h1>
+	
+	<!--  
+	
+		***${} 표현식은 th속성에만 사용 가능하다
+	
+		HTML 속성 조작
+		- th:HTML속성명 = 값
+	
+	-->
+
+	<input type="text" name="age" size="${size}">
+	<br>
+	<input th:type="text" th:name="age" th:size="${size}">
+	<br>
+	<input type="text" name="age" th:size="${size}">
+	<br>
+	<input type="text" th:value="${name}">
+	
+	
+	<hr>
+	
+	<div class="one">Box</div>
+	<div th:class="one">Box</div>
+	
+	<div class="one" th:class="two">Box</div>
+	<div class="one" th:attrappend="class=' two'">Box</div>
+	<div class="one" th:attrprepend="class='two '">Box</div>
+	
+	<input type="text" value="이름: ">
+	<input type="text" th:value="'이름: ' + ${name}">
+	<input type="text" th:value="|이름:  ${name}|">
+	<input type="text" value="이름: " th:attrappend="value=${name}">
+	
+	<hr>
+	
+	<div class="one" th:classappend="two">Box</div>
+	
+	<hr>
+	
+	<input type="checkbox" name="cb" checked>
+	<input type="checkbox" name="cb" th:checked="true">
+	<input type="checkbox" name="cb" th:checked="false">
+
+	<input type="checkbox" name="cb" th:checked="${size > 0}">
+	<input type="checkbox" name="cb" th:checked="${size < 0}">
+	
+	<hr>
+	
+	<!-- <div style="background-color: ${color};">box</div> -->
+	<div th:style="'background-color: ' + ${color}">box</div>
+	<div th:style="|background-color:  + ${color}|">box</div>
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+

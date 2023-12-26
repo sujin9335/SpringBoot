@@ -1,0 +1,5 @@
+package com.test.thymeleaf.domain;
+
+public class TestDTO {
+
+}

@@ -1,9 +1,12 @@
 package com.test.thymeleaf;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+//mapper는 따로 스캔으로 인식시켜야됨
+@MapperScan(basePackages = "com.test.thymeleaf.mapper")
 public class ThymeleafApplication {
 
 	public static void main(String[] args) {

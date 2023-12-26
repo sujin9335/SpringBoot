@@ -1,0 +1,8 @@
+package com.test.thymeleaf.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class TestDAO {
+
+}

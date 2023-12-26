@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+	.one { color:blue; }
+	.two { background: yellow; }
+	.three { text-decoration: underline; }
+
+</style>
+
+</head>
+<body>
+
+	<h1>HTML Attributes</h1>
+	
+	<!--  
+	
+		***${} 표현식은 th속성에만 사용 가능하다
+	
+		HTML 속성 조작
+		- th:HTML속성명 = 값
+	
+	-->
+
+	<input type="text" name="age" size="${size}">
+	<br>
+	<input th:type="text" th:name="age" th:size="${size}">
+	<br>
+	<input type="text" name="age" th:size="${size}">
+	<br>
+	<input type="text" th:value="${name}">
+	
+	
+	<hr>
+	
+	<div class="one">Box</div>
+	<div th:class="one">Box</div>
+	
+	<div class="one" th:class="two">Box</div>
+	<div class="one" th:attrappend="class=' two'">Box</div>
+	
+	<input type="text" value="이름: ">
+	
+	
+
+</body>
+</html>
+
+
+
+
+
+
+

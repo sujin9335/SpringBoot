@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Content</h1>
+	
+	<!--/*  
+	
+		시작태그~끝태그 > PCDATA 조작
+		1. th:text
+			- escaped text
+			- 문자열에 이스케이프 적용함
+			- '<' -> '&lt';
+			- '>' -> '&gt';
+			- 태그 적용 불가
+		
+		2. th:utext
+			- unescaped text
+			- 문자열에 이스케이프 적용안함
+			- 태그 적용 가능
+			- innerHTML
+			
+		인라인 출력
+			- th:inline="text" > 기본값
+			- th:inline="javascript"
+			- th:inline + [[]] > escaped text
+			- th:inline + [()] > unescaped text
+	
+	
+	*/-->
+
+	<div th:text="${txt1}"></div>
+	<div th:text="${txt2}"></div>
+	
+	<div th:utext="${txt1}"></div>
+	<div th:utext="${txt2}"></div>
+	
+	<hr>
+	
+	<div th:text="${txt1}"></div>
+	
+	
+	
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

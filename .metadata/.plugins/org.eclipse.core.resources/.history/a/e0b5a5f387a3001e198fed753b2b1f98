@@ -1,0 +1,7 @@
+package com.test.thymeleaf.mapper;
+
+public interface TestMapper {
+
+	TestDTO get();
+
+}

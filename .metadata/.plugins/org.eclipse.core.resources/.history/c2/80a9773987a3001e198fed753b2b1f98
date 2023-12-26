@@ -1,0 +1,58 @@
+package com.test.thymeleaf.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class TestController {
+
+	@Autowired
+	private TestMapper mapper; //DB
+	
+	
+	@GetMapping(value = "/m1.do")
+	public String m1(Model model) {
+		
+		model.addAttribute("num", 100); //request
+		model.addAttribute("txt", "홍길동");
+		
+		
+		return "m1"; //src/main/resources > templates > m1.html
+	}
+	
+	@GetMapping(value = "/m2.do")
+	public String m2(Model model) {
+		
+		//객체 반환(map/obj)
+		
+		
+		return "m2";
+	}
+	
+	@GetMapping(value = "/m3.do")
+	public String m3(Model model) {
+		
+		
+		
+		return "m3";
+	}
+	
+	@GetMapping(value = "/m4.do")
+	public String m4(Model model) {
+		
+		
+		
+		return "m4";
+	}
+	
+	@GetMapping(value = "/m5.do")
+	public String m5(Model model) {
+		
+		
+		
+		return "m5";
+	}
+	
+}
